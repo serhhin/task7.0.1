@@ -4,7 +4,7 @@ setup(
     name="clean_folder",   
     version='0.0.1',
     entry_points={
-        'console_sceipts':['clean-folder=clran_folder.clean:main']
+        'console_sceipts':['clean-folder=clean_folder.clean:main']
     },
     packages=find_packages()
 )

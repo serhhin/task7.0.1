@@ -1,0 +1,2 @@
+[console_sceipts]
+clean-folder = clran_folder.clean:main
