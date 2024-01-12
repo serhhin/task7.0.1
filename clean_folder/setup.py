@@ -2,9 +2,9 @@ from setuptools import setup, find_packages
 
 setup(
     name="clean_folder",   
-    version='0.0.1',
+    version='0.0.2',
     entry_points={
-        'console_sceipts':['clean-folder=clean_folder.clean:main']
+        'console_scripts':['clean-folder=clean_folder.clean:main']
     },
     packages=find_packages()
 )
