@@ -97,25 +97,26 @@ def handle_folder(folder: Path):
 
 def main():
     folder_path = Path(sys.argv[1])
-    scan(folder)
+    scan(folder_path)
     for file in JPEG_IMAGES:
-        handle_media(file, folder / 'images' / 'JPEG')
+        handle_media(file, folder_path / 'images' / 'JPEG')
     for file in JPG_IMAGES:
-        handle_media(file, folder / 'images' / 'JPG')
+        handle_media(file, folder_path / 'images' / 'JPG')
     for file in PNG_IMAGES:
-        handle_media(file, folder / 'images' / 'PNG')
+        handle_media(file, folder_path / 'images' / 'PNG')
     for file in SVG_IMAGES:
-        handle_media(file, folder / 'images' / 'SVG')
+        handle_media(file, folder_path / 'images' / 'SVG')
     for file in MP3_AUDIO:
-        handle_media(file, folder / 'audio' / 'MP3')
+        handle_media(file, folder_path / 'audio' / 'MP3')
 
     for file in MY_OTHER:
-        handle_media(file, folder / 'MY_OTHER')
+        handle_media(file, folder_path / 'MY_OTHER')
     for file in ARCHIVES:
-        handle_media(file, folder / 'ARCHIVES')
+        handle_media(file, folder_path / 'ARCHIVES')
 
     for folder in FOLDERS[::-1]:
         handle_folder(folder)
 
 if __name__ == '__main__':
     main()
+    
